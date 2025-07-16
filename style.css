@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Azeret Mono", monospace;
+}
+
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+#search-input {
+  width: 100%;
+  padding: 8px 30px 8px 10px;
+  font-size: 14px;
+}
+
+#clear-icon {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+  display: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.word {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.meaning, .example, .hindi {
+  margin: 5px 0;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.meaning span, .example span, .hindi span {
+  color: gray;
+}
+
+.hindi {
+  color: #666;
+  font-style: italic;
+}
+
+.pagination,
+.jump-to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination button,
+.jump-to button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.jump-to input {
+  width: 60px;
+  padding: 5px;
+}
+
+.alert {
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #ffe5e5;
+  color: #b00020;
+  border: 1px solid #b00020;
+  border-radius: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Glossary</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Legal Glossary</h1>
+
+    <div class="search-bar">
+      <div class="search-wrapper">
+        <input type="text" id="search-input" placeholder="Search word or meaning..." />
+        <span id="clear-icon">×</span>
+      </div>
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="dictionary-list"></div>
+    <p id="no-results" style="display:none; text-align:center; margin-top: 20px;">No results found.</p>
+
+    <div class="pagination" id="pagination">
+      <button id="prev">Prev</button>
+      <span id="page-num"></span>
+      <button id="next">Next</button>
+    </div>
+
+    <div class="jump-to" id="jump-container">
+      <input type="number" id="jump-input" min="1" placeholder="Page #"/>
+      <button id="jump-btn">Go</button>
+    </div>
+    <p id="custom-alert" class="alert" style="display:none;">Enter a valid page number.</p>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
