@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>404 Not Found</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Azeret Mono", monospace;
+}
+    .server-line {
+      font-style: italic;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Not Found</h1>
+  <p>The requested URL <code id="bad-url"></code> was not found on this server.</p>
+  <hr>
+  <p class="server-line">
+    Apache/2.0.54 (Fedora) Server at <span id="host">www.example.com</span> Port 80
+  </p>
+
+  <script>
+    // Insert current path after domain
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    document.getElementById("bad-url").textContent = path;
+
+    // Optional: auto-fill domain
+    document.getElementById("host").textContent = window.location.hostname;
+  </script>
+</body>
+</html>
