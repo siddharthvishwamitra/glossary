@@ -1,6 +1,6 @@
 let data = [];
 let currentPage = 1;
-const itemsPerPage = 5;
+const itemsPerPage = 6;
 let filteredData = [];
 
 const list = document.getElementById("dictionary-list");

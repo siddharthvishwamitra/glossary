@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1024">
   <title>404 Not Found</title>
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   box-sizing: border-box;
   font-family: "Azeret Mono", monospace;
 }
-    .server-line {
-      font-style: italic;
-      font-size: 14px;
-    }
-  </style>
+.server-line {
+  font-style: italic;
+  font-size: 14px;
+}
+</style>
 </head>
 <body>
   <h1>Not Found</h1>
@@ -26,11 +26,9 @@
   </p>
 
   <script>
-    // Insert current path after domain
     const path = window.location.pathname + window.location.search + window.location.hash;
     document.getElementById("bad-url").textContent = path;
 
-    // Optional: auto-fill domain
     document.getElementById("host").textContent = window.location.hostname;
   </script>
 </body>

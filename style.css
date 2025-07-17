@@ -13,6 +13,7 @@ body {
 
 .container {
   padding: 20px;
+  padding-top: 0px;
 }
 
 h1 {
@@ -62,13 +63,13 @@ h1 {
 }
 
 .word {
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .meaning, .example, .hindi {
   margin: 5px 0;
-  font-size: 0.9em;
+  font-size: 15px;
   font-weight: 400;
 }
 
